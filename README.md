@@ -1,8 +1,12 @@
-# Silly Squares Site :page_with_curl:
+# WZDM Management Agency Exclusive Content Dashboard for Brands :page_with_curl:
 
-This repo is the frontend React website / webapp for the Silly Squares Club.
+This repo is the frontend React website / webapp that was forked from the Silly Squares Club website.
 
-It is an example of a browser application that calls to a live Smart Contract hosted on the polygon network.
+It is an example of a browser application that calls to a live Smart Contract hosted on the polygon network <i>that allows NFT holders to view exclusive content on a webpage dashbord</i>.
+
+# Purpose of the Site
+
+Now, you can create a new kind of purchase and login portal for your customers and clients to see exclusive content that is only shown to your NFT holders.
 
 
 Live url: (not yet delpoyed)
