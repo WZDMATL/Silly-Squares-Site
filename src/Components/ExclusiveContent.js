@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
 import { ethers } from "ethers";
+import { Link } from "react-router-dom";
 
 
 class ExclusiveContent extends Component {

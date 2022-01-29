@@ -11,7 +11,6 @@ import Portfolio from "./Components/Portfolio";
 import Mint from "./Components/Mint";
 import { ethers } from "ethers";
 import SillySqauresABI from './contract-ABIs/Silly_Squares_NFT_ABI.json';
-import ExclusiveContent from "./Components/ExclusiveContent";
 
 class App extends Component {
 
@@ -225,9 +224,6 @@ class App extends Component {
                     contractOwnerAddress={this.state.sillySquaresSummertimeContractOwnerAddress}
                     totalAlreadyMinted={this.state.totalSquaresSummertimeAlreadyMinted}
                     totalSupply={this.state.totalSupplySummertime}
-        />
-        <ExclusiveContent sillySquaresClubBalance={this.state.sillySquaresClubBalance} 
-                          sillySquaresSummertimeBalance={this.state.sillySquaresSummertimeBalance}
         />
         <Contact data={this.state.homePageData.main} />
         <Footer data={this.state.homePageData.main} />

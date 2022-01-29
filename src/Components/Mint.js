@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
 import { ethers } from "ethers";
+import { Link } from "react-router-dom";
 
 const mintBtnStyles = {
     width: '40vw',
@@ -205,6 +206,11 @@ class Mint extends Component {
 
                         </div>
 
+                    </div>
+                    <div>
+                        <Link to="/exclusive" className="button btn project-btn">
+                            <i class="fas fa-user"></i>Exclusive Content
+                        </Link>
                     </div>
                 </Slide>
 
