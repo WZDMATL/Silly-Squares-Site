@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: linear-gradient(110.9deg, rgb(44, 221, 239) 1.1%, rgb(14, 191, 210) 37.6%, rgb(8, 127, 140) 99.2%); }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -56,14 +56,14 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 90px/1.1em 'LeagueSpartan-Bold', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #ddd;
+   font: 18px/1.9em 'LeagueSpartan-Bold', sans-serif;
+   color: #fff;
    margin: 0 auto;
    width: 70%;
 }
@@ -80,13 +80,17 @@ header .banner-text hr {
 
 /* header social links */
 header .social {
-   margin: 24px 0;
+   margin: 24px 133px;
    padding: 0;
    font-size: 30px;
+   justify-content: space-evenly;
+   display: flex;
+   position: relative;
+   flex-wrap: wrap;
 }
 header .social li {
    display: inline-block;
-   margin: 0 15px;
+   /* margin: 0 15px; */
    padding: 0;
 }
 header .social li a { color: #fff; }
@@ -182,7 +186,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: linear-gradient(to top, #09203f 0%, #537895 100%);
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -231,7 +235,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: linear-gradient(110.9deg, rgb(44, 221, 239) 1.1%, rgb(14, 191, 210) 37.6%, rgb(8, 127, 140) 99.2%);
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -262,7 +266,7 @@ ul#nav li.current a { color: #fe6928; }
    border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 16px/24px 'opensans-bold', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -1006,18 +1010,18 @@ footer .social-links li:first-child { margin-left: 0; }
 #go-top a:hover { background-color: #0F9095; }
 
 
-.social .btn:first-child{
+/* .social .btn:first-child{
    margin-right: 30px;
-}
+} 
 .social .btn{
    padding-left: 30px;
    padding-right: 30px; 
 }
 .social .btn i{
    margin-right: 15px;
-}
+}*/
 .project-btn{
-   background-color: #1abc9c !important;
+   background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
 }
 .github-btn{
    background-color: #34495e !important;

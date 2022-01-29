@@ -140,6 +140,18 @@
 
 
 /*
+ * League Spartan
+================================================================================ */   
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('fonts/leaguespartan/LeagueSpartan-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*
  * FIXED for Font-Face Chrome Rendering
 ================================================================================ */
 @media screen and (-webkit-min-device-pixel-ratio:0) {

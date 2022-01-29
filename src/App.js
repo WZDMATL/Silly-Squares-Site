@@ -4,10 +4,10 @@ import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import About from "./Components/About";
-import NFTs from "./Components/NFTs";
-import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+// import About from "./Components/About";
+// import NFTs from "./Components/NFTs";
+// import Contact from "./Components/Contact";
+// import Portfolio from "./Components/Portfolio";
 import Mint from "./Components/Mint";
 import { ethers } from "ethers";
 import SillySqauresABI from './contract-ABIs/Silly_Squares_NFT_ABI.json';
@@ -201,9 +201,8 @@ class App extends Component {
  
         <br/>
         <br/>
-        <About data={this.state.homePageData.main} />
-        <NFTs data={this.state.homePageData.resume} />
-        <Portfolio data={this.state.homePageData.portfolio} />
+        {/* <NFTs data={this.state.homePageData.resume} />
+        <Portfolio data={this.state.homePageData.portfolio} /> */}
         <Mint data={this.state.homePageData.resume}
                     collectionName='The Original Silly Squares Club'
                     nftContract={this.state.sillySquaresClubContract}
@@ -225,7 +224,7 @@ class App extends Component {
                     totalAlreadyMinted={this.state.totalSquaresSummertimeAlreadyMinted}
                     totalSupply={this.state.totalSupplySummertime}
         />
-        <Contact data={this.state.homePageData.main} />
+        {/* <Contact data={this.state.homePageData.main} /> */}
         <Footer data={this.state.homePageData.main} />
       </div>
     );

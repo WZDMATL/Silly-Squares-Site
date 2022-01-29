@@ -13,10 +13,11 @@ class Header extends Component {
     const purchaseSquaresSummertimeLink = this.props.data.purchaseSquaresSummertimeLink;
     const name = this.props.data.name;
     const description = this.props.data.description;
+    const description2 = this.props.data.description2;
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="cobweb" bg={true} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -72,16 +73,17 @@ class Header extends Component {
             </Fade>
             <br/>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>{description}</h3>
+              <h3>{description2}</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={purchaseSquaresClubLink} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Original Silly Squares Club
+                  <i className="fa fa-book"></i>Mint to Login
                 </a>
                 <a href={purchaseSquaresSummertimeLink} className="button btn project-btn">
-                  <i className="fa fa-anchor"></i>Silly Squares Summertime
+                  <i className="fa fa-anchor"></i>Dashboard
                 </a>
                 {/* <a href={enterClubLink} className="button btn github-btn">
                   <i className="fa fa-globe"></i>Enter The Club

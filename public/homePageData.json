@@ -1,8 +1,9 @@
 {
   "main": {
-    "name":"Silly Squares Club",
-    "description":"Awesome NFTs, people, and perks",
-    "image":"profilepic.jpg",
+    "name":"Exclusive Content Template",
+    "description":"Exclusive Content for NFT Holders by WZDM Management Agency", 
+    "description2": "Use this as a login page for your fans and customers",
+    "image":"WZDM-Management-Agency-Logo.png",
     "bio":"Silly Squares Club began as just a silly idea Jim had one day after hearing yet again about some generative art NFT collection that was simply \"images on the blockchain\". While Silly Squares is silly on the surface, it pushes the boundary of what's possible with NFTs and give holders exclusive access to hidden sections on this website, free swag, personalized consulting sessions with Jim, and more!",
     "contactmessage":"We'd love to hear from you! You can email us, call us, and even send us a postcard!",
     "email": "youremailhere@gmail.com",
