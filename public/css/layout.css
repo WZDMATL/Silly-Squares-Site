@@ -97,11 +97,18 @@ header .social li a { color: #fff; }
 header .social li a:hover { color: #0762f9; }
 
 /* scrolldown link */
+div#go-top {
+   box-shadow: rgba(0, 0, 0, 0.255) 0px 5px 15px;
+   border: none;
+   border-radius: 30px;
+}
+
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
    left: 50%;
    margin-left: -29px;
+   margin-bottom: 30px;
    color: #fff;
    display: block;
    height: 42px;

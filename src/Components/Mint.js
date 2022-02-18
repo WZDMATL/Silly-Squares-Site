@@ -189,7 +189,7 @@ class Mint extends Component {
                   <form>
                     <br />
                     <br />
-                    <label for="numberOfNftsToMint">NFTs to Mint (1-20):</label>
+                    <label id="mint-here" for="numberOfNftsToMint">NFTs to Mint (1-20):</label>
 
                     <br />
                     <input

@@ -71,7 +71,7 @@ class Header extends Component {
             <Fade bottom>
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
-            <br/>
+            <br />
             <Fade bottom duration={1200}>
               <h3>{description}</h3>
               <h3>{description2}</h3>
@@ -79,10 +79,16 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={purchaseSquaresClubLink} className="button btn project-btn">
+                <a
+                  href={purchaseSquaresClubLink}
+                  className="button btn project-btn"
+                >
                   <i className="fa fa-book"></i> Mint to Login
                 </a>
-                <a href={purchaseSquaresSummertimeLink} className="button btn project-btn">
+                <a
+                  href={purchaseSquaresSummertimeLink}
+                  className="button btn project-btn"
+                >
                   <i className="fa fa-anchor"></i> Dashboard
                 </a>
                 {/* <a href={enterClubLink} className="button btn github-btn">
@@ -94,7 +100,7 @@ class Header extends Component {
         </div>
 
         <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
+          <a className="smoothscroll" href="#mint-here">
             <i className="icon-down-circle"></i>
           </a>
         </p>

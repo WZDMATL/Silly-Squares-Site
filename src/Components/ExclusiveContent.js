@@ -24,7 +24,7 @@ class ExclusiveContent extends Component {
 
                 <Slide left duration={1300}>
                     <div style={this.props.sillySquaresClubBalance > 0 ? { background: "url('../images/stars.png')", backgroundRepeat: 'repeat' } :
-                        { backgroundColor: '#ebeeee' }}>
+                        { backgroundColor: '#fff' }}>
 
                         <div className="row text-center">
                             <br />
