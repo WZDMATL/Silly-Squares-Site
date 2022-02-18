@@ -23,7 +23,7 @@ class Footer extends Component {
               <ul className="social-links">{networks}</ul>
 
               <ul className="copyright">
-                <li>&copy; Copyright 2021 Silly Squares Club</li>
+                <li>&copy; Copyright 2022 WZDM Management Agency LLC</li>
               </ul>
             </div>
           </Fade>

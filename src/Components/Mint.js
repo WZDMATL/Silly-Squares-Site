@@ -2,19 +2,22 @@ import React, { Component } from "react";
 import Slide from "react-reveal";
 import { ethers } from "ethers";
 import { Link } from "react-router-dom";
+import wzdmphoto from '../images/WZDM-Management-Agency-Logo.png';
 
 const mintBtnStyles = {
-    width: '40vw',
-    height: '10vh',
-    lineHeight: '9vh',
-    borderRadius: '25px',
-    backgroundColor: "green",
-    border: '5px solid darkgreen',
-    color: 'white',
-    fontSize: '4rem',
-    margin: 'auto',
-    cursor: 'pointer'
-}
+  width: "35vw",
+  height: "7vh",
+  lineHeight: "7vh",
+  borderRadius: "25px",
+  // backgroundColor: 'radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%)',
+  border: "1px solid blue",
+  color: "black",
+  fontSize: "2rem",
+  margin: "auto",
+  cursor: "pointer",
+  boxShadow:
+    "rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px"
+};
 
 const mintInputStyles = {
     fontSize: '29px',
@@ -153,68 +156,75 @@ class Mint extends Component {
 
     render() {
         return (
-            <section id="resume" >
+          <section id="resume" class="text-center">
+            <Slide left duration={1300}>
+              <div className="text-center">
+                <div className="row text-center">
+                  <h2>{this.props.collectionName}</h2>
+                  <br />
+                  <h3>
+                    <span>
+                      ( {this.props.totalAlreadyMinted} ) of ({" "}
+                      {this.props.totalSupply} ) have been minted!
+                    </span>
+                  </h3>
+                  <br />
+                  <p>
+                    Click the "mint" button to generate the WZDM NFT from
+                    the {this.props.collectionName} collection!
+                  </p>
+                  <br />
+                  <h3>
+                    <span>Cost: {this.state.costPerNFT}Eth per NFT</span>
+                  </h3>
+                  <p>(Users can mint up to 20 NFTs in a single transaction)</p>
+                  <br />
+                  {/*<img src="../public/images/WZDM-Management-Agency-Logo.png" alt="WZDM NFT" />*/}
+                  <img
+                    src={wzdmphoto}
+                    alt="WZDM NFT"
+                    width="400px"
+                  />
 
-                <Slide left duration={1300}>
-                    <div className="">
+                  <form>
+                    <br />
+                    <br />
+                    <label for="numberOfNftsToMint">NFTs to Mint (1-20):</label>
 
-                        <div className="row text-center">
+                    <br />
+                    <input
+                      type="number"
+                      id="numberOfNftsToMint"
+                      name="numberOfNftsToMint"
+                      style={mintInputStyles}
+                      min="1"
+                      max="20"
+                      value={this.state.numberOfNFTsToMint}
+                      onChange={(e) => this.handleNFTsNumberInputChange(e)}
+                    ></input>
+                    <br />
+                    <br />
+                    <br />
 
-                            <h2>{this.props.collectionName}</h2>
-                            <br/>
-                            <h1><span>Mint Here!</span></h1>
-                            <br/>
-                            {this.props.collectionName}
-                            <br/>
-                            <br/>
-                            <h3>
-                                <span>( {this.props.totalAlreadyMinted} ) of ( {this.props.totalSupply} ) have been minted!</span>
-                            </h3> 
-                            <br />
-                            <p>
-                                Click the "mint" button to generate a new random NFT from {this.props.collectionName} collection!
-                            </p>
-                            <br />
-                            <h3>
-                                <span>Cost: {this.state.costPerNFT}Eth per NFT</span>
-                            </h3>
-                            <p>
-                                (Users can mint up to 20 NFTs in a single transaction)
-                            </p>
-                            <br />
-                            <img src="../images/gumball-machine.jpg" />
-
-
-                            <form>
-                                <br />
-                                <br />
-                                <label for="numberOfNftsToMint">NFTs to Mint (1-20):</label>
-
-                                <br />
-                                <input type="number" id="numberOfNftsToMint" name="numberOfNftsToMint" style={mintInputStyles}
-                                    min="1" max="20" value={this.state.numberOfNFTsToMint} onChange={(e) => this.handleNFTsNumberInputChange(e)} ></input>
-                                <br />
-                                <br />
-                                <br />
-
-                                <div style={mintBtnStyles} onClick={async () => await this.mintTokens()}>
-                                    <span style={{ userSelect: 'none' }}>
-                                        Mint!
-                                    </span>
-                                </div>
-                            </form>
-
-                        </div>
-
+                    <div
+                      style={mintBtnStyles}
+                      onClick={async () => await this.mintTokens()}
+                    >
+                      <span style={{ userSelect: "none" }}>Mint!</span>
                     </div>
-                    <div>
-                        <Link to="/exclusive" className="button btn project-btn">
-                            <i class="fas fa-user"></i>Exclusive Content
-                        </Link>
-                    </div>
-                </Slide>
-
-            </section>
+                  </form>
+                </div>
+              </div>
+              <div class="text-center">
+                <Link
+                  to="/exclusive"
+                  className="button btn project-btn text-center"
+                >
+                  {/*<i class="fas fa-user"></i>*/}Exclusive Content
+                </Link>
+              </div>
+            </Slide>
+          </section>
         );
     }
 }

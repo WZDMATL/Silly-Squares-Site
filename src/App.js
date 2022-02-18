@@ -196,15 +196,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.homePageData.main} />
-        <br/>
-        <br/>
- 
-        <br/>
-        <br/>
         {/* <NFTs data={this.state.homePageData.resume} />
         <Portfolio data={this.state.homePageData.portfolio} /> */}
         <Mint data={this.state.homePageData.resume}
-                    collectionName='The Original Silly Squares Club'
+                    collectionName='Official WZDM NFT'
                     nftContract={this.state.sillySquaresClubContract}
                     signer={this.state.signer}
                     userAddress={this.state.currentUserAddress}
@@ -212,11 +207,8 @@ class App extends Component {
                     totalAlreadyMinted={this.state.totalSquaresClubAlreadyMinted}
                     totalSupply={this.state.totalSupplyClub}
         />
-        <br/>
-        <hr/>
-        <br/>
         <Mint data={this.state.homePageData.resume}
-                    collectionName='Silly Squares Summertime Edition'
+                    collectionName='Official WZDM NFT 2'
                     nftContract={this.state.sillySquaresSummertimeContract}
                     signer={this.state.signer}
                     userAddress={this.state.currentUserAddress}
